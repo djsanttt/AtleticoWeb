@@ -1,0 +1,74 @@
+<% var count = 0; %>
+    <% var i = 0; %>
+    <% if (data) { %>
+    
+    <div class="container">
+        
+        <div class="row mt-5">
+                <% for (var j = 0; j < torneo.cantGrupos; j++) { %>
+                
+            <table class="table table-bordered table-hover">
+                    
+                <thead>
+                        
+                    <tr>
+                        <th colspan="10" class="text-center"> GRUPO <%= j + 1;  %></th>
+                    </tr>
+                    <thead>
+                        <tr>
+                            <th>Pos</th>
+                            <th>Equipo</th>
+                            <th>Puntos</th>
+                            <th>PJ</th>
+                            <th>PG</th>
+                            <th>PE</th>
+                            <th>PP</th>
+                            <th>GF</th>
+                            <th>GC</th>
+                            <th>DF</th>
+                        </tr>
+                    </thead>
+                </thead>
+                <% for (i = 0; i < torneo.cantEquiposGrup; i++) { %>
+                <tbody>
+                    <tr>
+                        <td>
+                            <%= data[i + count].pos %>
+                        </td>
+                        <td>
+                            <%= data[i + count].nombre %>
+                        </td>
+                        <td>
+                            <%= data[i + count].puntos %>
+                        </td>
+                        <td>
+                            <%= data[i + count].partidosGanados %>
+                        </td>
+                        <td>
+                            <%= data[i + count].partidosEmpatados %>
+                        </td>
+                        <td>
+                            <%= data[i + count].partidosPerdidos %>
+                        </td>
+                        <td>
+                            <%= data[i + count].golesAFavor %>
+                        </td>
+                        <td>
+                            <%= data[i + count].golesEnContra %>
+                        </td>
+                        <td>
+                            <%= data[i + count].diferenciaGoles %>
+                        </td>
+                        <td>
+                            <%= data[i + count].partidosEmpatados %>
+                        </td>
+                    </tr>
+                </tbody>
+                <% } %>
+                <% count = i; %>
+            </table>
+           
+            <% } %>
+        </div>
+        
+        <% } %>

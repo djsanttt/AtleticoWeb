@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>
+        <%= nombres.title %>
+    </title>
+    <% include partials/head.html %>
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <% include partials/navigation.html %>
+
+
+    <!-- MAIN CONTENT -->
+    <div class="container principal">
+        <header class="row">
+            <div class="col-xl-12 text-center">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis minus voluptatibus fuga quibusdam
+                    debitis unde, ex est temporibus placeat odio dicta sit tenetur quam modi similique quas? Nobis,
+                    perferendis quibusdam?</p>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECTION ONE-->
+    <div class="container-fluid" id="historia">
+        <div class="row bg-dark text-white p-5 text-center">
+            <div class="col-sm-6 div-img-historia">
+                <!--<i class="fab fa-youtube fa-10x"></i>-->
+                <img src="/img/club-atletico-ayacucho.png" class="img-historia" alt="JOACO PUTO" width="25%">
+            </div>
+            <div class="col-sm-6 historia">
+                <h3>Los comienzos</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, vero! Quia, quisquam. Dicta
+                    aperiam necessitatibus quo quaerat, ut ratione deleniti voluptates omnis dolores hic eaque id,
+                    mollitia quos corrupti nisi.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <% include partials/footer.html %>
+
+</body>
+
+</html>

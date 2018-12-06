@@ -1,0 +1,58 @@
+body {
+    background: #DC2424;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A569D, #DC2424);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A569D, #DC2424); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+}
+
+.principal {
+    height: 560px;
+    width: auto;
+    padding-top: 225px;
+    /*border: 3px solid black;*/
+    border-radius: 7px;
+    margin: 0 auto;
+}
+
+.div-contacto {
+    padding-top: 170px;
+    
+}
+
+.card {
+    min-width: 70px;
+}
+
+.historia {
+    padding-top: 35px;
+    
+}
+
+.div-img-historia {
+    text-align: center;
+}
+
+.img-historia {
+    min-width: 100px;
+    min-height: 100px;
+}
+
+.ico-nav {
+   height: 35px;
+   width: 34px;
+   padding-bottom: 3px;
+   text-align: left;
+}
+
+.copia {
+    background: #C9D6FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    max-width: auto;
+    max-height: 35px;
+    
+}
+
+
+ * {
+    box-sizing: border-box;
+  }
